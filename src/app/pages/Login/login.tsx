@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 export const Login = () => {
-    const[senha,setPassword] = useState('');
+    const[password,setPassword] = useState('');
     const[email,setEmail] = useState('');
    const handleEntrar = () =>{
     console.log(email)
-    console.log(senha)
+    console.log(password)
    }
     
     return (
@@ -13,11 +13,11 @@ export const Login = () => {
             <form>
                 <label >
                     <span>Email</span>
-                    <input value={email} onChange={e => setPassword(e.target.value)}/>
+                    <input value={email} onChange={e => setEmail(e.target.value)}/>
                 </label>
                 <label >
                     <span>Senha</span>
-                    <input  type="password" value={senha} onChange={e => setEmail(e.target.value)}/>
+                    <input  type="password" value={password} onChange={e => setPassword(e.target.value)}/>
                   
                 </label>
 
